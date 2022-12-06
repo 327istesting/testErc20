@@ -122,7 +122,7 @@ mod test_erc {
 
             // initiate testerc20 by alice 
             let test_acc_id = client
-                .instantiate("meta_defender", &mut ink_e2e::alice(), test_constructor, 0, None)
+                .instantiate("testerc20", &mut ink_e2e::alice(), test_constructor, 0, None)
                 .await
                 .expect("instantiate failed")
                 .account_id;
